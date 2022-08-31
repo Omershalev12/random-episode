@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episode generator</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <h2 class="logo">Random Episode Generator</h2>
+            <ul>
+                <form action="/" method="post">
+                    <button class="navbutton" name="button" value="home" type="submit">Home</button>
+                    <button class="navbutton" name="button" value="add" type="submit">Add series +</button>
+                </form>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <h1>Add a Season</h1>
+        <form action="/newSeason" method="post">
+            <label for="name">Name</label>
+            <br>
+            <input type="text" class="text name" name="name" value="<%=seriesName%>" readonly>
+            <br>
+            <label for="number">Season number</label>
+            <br>
+            <input type="number" class="text name" name="number" value="<%=seasonNum%>" min="1" max="<%=seasonNum%>">
+            <br>
+            <label for="episodes">Number of episodes</label>
+            <br>
+            <input type="number" name="episodes" class="text" min="1">
+            <button type="submit">Add season</button>
+        </form>
+    </div>
+</body>
+</html>

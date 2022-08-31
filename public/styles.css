@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;    
+}
+
+.header{
+    background-color: rgb(245, 245, 245);
+    height: 100px;
+    margin: 0;
+}
+
+.navbar{
+    width: 75%;
+    height: 100px;
+    margin: 0 auto;
+    
+}
+
+h1{
+    margin: 0;
+    padding: 30px 0 10px 0;
+    width: fit-content;
+    display: inline-block;
+}
+
+.logo{
+    margin: 0;
+    padding: 30px 0;
+    width: fit-content;
+    display: inline-block;
+    font-weight: lighter;
+}
+
+ul{
+    list-style-type: none;
+    margin: 30px 0;
+    padding: 20px 0 0 0;
+    display: inline;
+    width: fit-content;
+    float: right;
+}
+
+.navbutton{
+    padding: 10px;
+    display: inline;
+    font-size: 1.2rem;
+    border-width: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(85, 85, 85);
+}
+
+#main{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.blogDesc{
+    font-size: large;
+}
+
+label{
+    margin: 0;
+    font-weight: 650;
+    font-family: sans-serif;
+    display: block;
+}
+
+.text{
+    width: 25%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-style: groove;
+    border-width: 1px;
+    border-color: rgb(85, 85, 85);
+}
+
+.name{
+    height: 20px;
+}
+
+p{
+    margin-bottom: 40px;
+}
+
+.showscontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 32%;
+    margin: 8px 4px;
+    display: inline-block;
+}
